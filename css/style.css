@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+@font-face{
+    font-family: Quantum;
+    src: url('/css/font/Quantum.otf');
+}
+
+.container{
+    max-width: 1440px;
+    padding: 20px 20px;
+}
+
+header{
+    font-family:  'Raleway', sans-serif;
+    background-color: #D43F52;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #FFF;
+}
+
+header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    font-size: 28px;
+    color: #000;
+    font-weight: normal;
+    margin-top: -6px;
+    font-family: 'Quantum', 'Raleway', sans-serif;
+    letter-spacing: 2px;
+    margin-right: 15px;
+}
+
+.menu ul{
+    display: flex;
+}
+
+.menu ul li{
+    list-style-type: none;
+    position: relative;
+    margin-left: 15px;
+}
+
+.menu ul li::after{
+    content: "";
+    width: 102%;
+    position: absolute;
+    left: 0;
+    height: 4px;
+    bottom: -21px;
+    transition: 0.5s;
+}
+
+.menu ul li:hover::after{
+    background-color: #FFF;
+}
+
+.menu ul a{
+    text-decoration: none;
+    color: #FFF;
+    padding: 10px 5px;
+}
