@@ -14,14 +14,30 @@ body{
 
 .container{
     max-width: 1440px;
-    padding: 20px 20px;
+    width: 100%;
 }
+
+h1{
+    text-align: center;
+}
+
+h2{
+    text-transform: uppercase;
+    text-align: center;
+}
+
+section{
+    padding: 50px 20px;
+}
+
+/*header*/
 
 header{
     background-color: #D43F52;
     text-transform: uppercase;
     font-weight: bold;
     color: #FFF;
+    padding: 30px 20px;
 }
 
 header .container{
@@ -56,7 +72,7 @@ header .container{
     position: absolute;
     left: 0;
     height: 4px;
-    bottom: -21px;
+    bottom: -31px;
     transition: 0.2s;
 }
 
@@ -73,12 +89,14 @@ header .container{
 /*banner section*/
 
 #banner {
-    height: calc(100vh - 62px);
-    width: 100vw;
+    height: calc(100vh - 82px);
+    max-width: 100vw;
+    max-width: 100vw;
     background-image: url(../images/banner_bg2.png);
     background-position-x: center;
     background-position-y: center;
     background-size: cover;
+    padding: 0;
 }
 
 #banner div{
@@ -96,6 +114,7 @@ header .container{
     color: #D43F52;
     font-size: 60px;
     animation-delay: 0.1s;
+    line-height: 55px;
 }
 
 #banner p{
@@ -104,3 +123,14 @@ header .container{
     animation-delay: 0.3s;
 }
 
+/*serviços*/
+
+#services{
+    background-color: #1a1a1a;
+}
+
+#services h2{
+    letter-spacing: 4px;
+    font-size: 33px;
+    color: #FFF;
+}
