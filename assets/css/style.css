@@ -161,8 +161,9 @@ header .container{
 
 #about .container{
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(374px, 1fr));
     align-items: center;
+    justify-content: center;
 }
 
 
