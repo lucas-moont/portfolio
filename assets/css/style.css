@@ -310,7 +310,6 @@ header .container{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: rgba(212, 63, 82, .8);
     height: 100%;
     opacity: 0;
     transition: 0.4s;
