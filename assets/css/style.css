@@ -41,6 +41,11 @@ h4{
     font-size: 22px;
 }
 
+h5{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
 section{
     padding: 50px 20px;
 }
@@ -166,10 +171,11 @@ header .container{
     justify-content: center;
 }
 
+/*add media queries for xsmall devices*/
 
 #about a{
     display: inline-block;
-    margin-top: 20px;
+    margin-top: 30px;
     text-decoration: none;
     font-weight: bold;
     color: #D43F52;
@@ -179,6 +185,7 @@ header .container{
     padding: 15px 30px;
     border: 2px solid #D43F52;
     transition: 0.2s;
+    max-height: 100vh;
 }
 
 #about a:hover{
@@ -264,4 +271,40 @@ header .container{
     .service{
         width: 340px;
     }
+}
+
+/*projects section*/
+
+#projects{
+    background-color: #1a1a1a;
+}
+
+.project{
+    color: #FFF;
+    height: 300px;
+    background-image: url(../images/projects/awax.png);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+}
+
+.project div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(212, 63, 82, .8);
+    height: 100%;
+}
+
+.project img{
+    height: 20px;
+}
+
+.project p{
+    font-size: 14px;
+}
+
+.project a{
+    margin-right: 10px;
 }
