@@ -24,6 +24,12 @@ h1{
 h2{
     text-transform: uppercase;
     text-align: center;
+    color: #FFF;
+    margin-bottom: 50px;
+}
+
+h3{
+    font-size: 22px;
 }
 
 section{
@@ -127,10 +133,79 @@ header .container{
 
 #services{
     background-color: #1a1a1a;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 #services h2{
     letter-spacing: 4px;
     font-size: 33px;
+}
+
+#services .container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 72px;
+    justify-content: space-between;
+}
+
+.service{
+    display: flex;
+    color: #999;
+
+}
+
+.iconHolder{
+    height: 50px;
+    width: 50px;
+    margin-right: 32px;
+    padding: 10px 15px;
+    border: 1px solid #FFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: #D43F52;
+}
+
+.iconHolder img{
+    height: 40px;
+    width: 40px;
+}
+
+.service h3{
     color: #FFF;
+    margin-bottom: 12px;
+}
+
+.service p{
+    line-height: 20px;
+    font-size: 14px;
+}
+
+@media (max-width: 1063px){
+    #services h3{
+        width: 100px;
+    }
+}
+
+@media (min-width: 683px) and (max-width: 805px){
+    #services .container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 682px){
+    #services .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .service{
+        width: 340px;
+    }
 }
