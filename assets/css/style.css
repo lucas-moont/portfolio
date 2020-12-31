@@ -277,6 +277,8 @@ header .container{
 /*projects section*/
 
 #projects{
+    display: flex;
+    justify-content: center;
     background-color: #1a1a1a;
 }
 
