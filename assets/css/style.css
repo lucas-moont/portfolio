@@ -330,4 +330,19 @@ header .container{
 
 .project a{
     margin-right: 10px;
+    text-decoration: none;
+    color: #FFF;
+    letter-spacing: 2px;
+}
+
+.starbucks{
+    background-image: url(../images/projects/starbucks.png);
+}
+
+.fylo{
+    background-image: url(../images/projects/fylo.png);
+}
+
+.medicenter{
+    background-image: url(../images/projects/medicenter.png);
 }
