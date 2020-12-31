@@ -322,10 +322,13 @@ header .container{
 
 .project img{
     height: 20px;
+    margin-right: 3px;
 }
 
 .project p{
     font-size: 14px;
+    display: flex;
+    align-items: center;
 }
 
 .project a{
@@ -333,16 +336,33 @@ header .container{
     text-decoration: none;
     color: #FFF;
     letter-spacing: 2px;
+    margin-left: 3px;
+}
+
+.awax div{
+    background-color: rgba(178, 135, 86, .8);
 }
 
 .starbucks{
     background-image: url(../images/projects/starbucks.png);
 }
 
+.starbucks div{
+    background-color: rgba(17, 112, 80, .8);
+}
+
 .fylo{
     background-image: url(../images/projects/fylo.png);
 }
 
+.fylo div{
+    background-color: rgba(29, 63, 122, .8);
+}
+
 .medicenter{
     background-image: url(../images/projects/medicenter.png);
+}
+
+.medicenter div{
+    background-color: rgba(57, 170, 225, .8);
 }
