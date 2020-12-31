@@ -1,3 +1,10 @@
+.animate-up{
+    animation-name: up;
+    animation-duration: 0.5s;
+    animation-fill-mode: backwards;
+    animation-timing-function: ease-out;
+}
+
 @keyframes up{
     from {
         opacity: 0;
@@ -9,9 +16,17 @@
     }
 }
 
-.animate-up{
-    animation-name: up;
-    animation-duration: 0.5s;
-    animation-fill-mode: backwards;
-    animation-timing-function: ease-out;
+@keyframes givepad{
+    from{
+        padding: 0;
+    }to{
+        padding: 10px;
+    }
+}
+
+.project:hover{
+    animation-name: givepad;
+    animation-duration: 0.4s;
+    animation-fill-mode: forwards;
+    animation-delay: 0.4s;
 }

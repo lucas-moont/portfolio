@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body{
@@ -295,6 +296,12 @@ header .container{
     justify-content: center;
     background-color: rgba(212, 63, 82, .8);
     height: 100%;
+    opacity: 0;
+    transition: 0.4s;
+}
+
+.project:hover div{
+    opacity: 1;
 }
 
 .project img{
