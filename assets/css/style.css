@@ -26,9 +26,18 @@ h2{
     text-align: center;
     color: #FFF;
     margin-bottom: 50px;
+    letter-spacing: 4px;
+    font-size: 33px;
 }
 
 h3{
+    
+    font-size: 31.5px;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+h4{
     font-size: 22px;
 }
 
@@ -129,19 +138,65 @@ header .container{
     animation-delay: 0.3s;
 }
 
+/*about*/
+
+#about{
+    background-color: #1a1a1a;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    flex-wrap: wrap;
+    color: #FFF;
+}
+
+#about h3,
+#about strong{
+    color: #D43F52;
+}
+
+#about p{
+    line-height: 22px;
+}
+
+#about .container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+}
+
+
+#about a{
+    display: inline-block;
+    margin-top: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #D43F52;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-size: 19px;
+    padding: 15px 30px;
+    border: 2px solid #D43F52;
+    transition: 0.2s;
+}
+
+#about a:hover{
+    background-color: #D43F52;
+    color: #FFF;
+}
+
+#about img{
+    max-width: 100%;
+}
+
 /*serviços*/
 
 #services{
-    background-color: #1a1a1a;
+    background-color: #000;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-
-#services h2{
-    letter-spacing: 4px;
-    font-size: 33px;
 }
 
 #services .container{
@@ -175,7 +230,7 @@ header .container{
     width: 40px;
 }
 
-.service h3{
+.service h4{
     color: #FFF;
     margin-bottom: 12px;
 }
@@ -186,7 +241,7 @@ header .container{
 }
 
 @media (max-width: 1063px){
-    #services h3{
+    #services h4{
         width: 100px;
     }
 }
