@@ -390,6 +390,8 @@ header .container{
     background-color: rgba(57, 170, 225, .8);
 }
 
+/*contact section*/
+
 #contact{
     background-color: #1a1a1a;
     display: flex;
@@ -422,15 +424,18 @@ header .container{
 }
 
 @media (max-width: 919px){
-    #contact .container{
+    #contact .container,
+    #skills .container{
         justify-content: center;
         grid-template-columns: 1fr 1fr;
         grid-gap: 30px;
+        max-width: 520px;
     }
 }
 
 @media (max-width: 520px){
-    #contact .container{
+    #contact .container,
+    #skills .container{
         grid-template-columns: 1fr;
         grid-gap: 40px;
     }
