@@ -65,7 +65,6 @@ header{
 header .container{
     display: flex;
     justify-content: space-between;
-    align-items: center;
 }
 
 .logo{
@@ -76,10 +75,13 @@ header .container{
     font-family: 'Quantum', 'Raleway', sans-serif;
     letter-spacing: 3px;
     margin-right: 15px;
+    display: flex;
+    align-items: center;
 }
 
 .menu{
     display: flex;
+    align-items: center;
 }
 
 .menuMobile{
@@ -94,7 +96,7 @@ header .container{
     background-color: #FFF;
     height: 2px;
     width: 35px;
-    margin: 3px 0;
+    margin: 5px 0;
 }
 
 .menu ul{
@@ -107,18 +109,6 @@ header .container{
     margin-left: 15px;
 }
 
-@media (max-width: 750px){
-    .logo{
-        font-size: 20px;
-    }
-    .menuMobile{
-        display: flex;
-    }
-    
-    .menu nav{
-        display: none;
-    }
-}
 
 .menu ul li::after{
     content: "";
@@ -138,6 +128,34 @@ header .container{
     text-decoration: none;
     color: #FFF;
     padding: 10px 5px;
+}
+
+@media (max-width: 750px){
+    .menuMobile{
+        display: flex;
+    }
+    
+    .menu ul{
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        background-color: #D43F52;
+        padding: 0 15px;
+    }
+
+    .menu ul li{
+        margin-left: 0;
+        padding: 15px 0 5px;
+        margin-bottom: 40px;
+        border-bottom: 1px solid #FFF;
+    }
+
+    .menu ul li::after{
+        bottom: 0px;
+        width: 100px;
+    }
 }
 
 /*banner section*/
@@ -499,7 +517,21 @@ header .container{
 
 /*x-small devices responsivity*/
 
+    
 @media (max-width: 374px){
+    header{
+        padding: 20px 10px;
+    }
+
+    .logo{
+        font-size: 24px;
+    }
+
+    .menu ul{
+        top: 70px;
+        padding: 20px 10px;
+    }
+
     h2{
         font-size: 30px;
     }
