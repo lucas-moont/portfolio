@@ -154,7 +154,7 @@ header .container{
     justify-content: flex-end;
     align-items: center;
     flex-wrap: wrap;
-    color: #FFF;
+    color: #DDD;
 }
 
 #about h3,
@@ -275,6 +275,29 @@ header .container{
     }
 }
 
+/*skills section*/
+
+#skills{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #1a1a1a;
+    color: #DDD;
+}
+
+#skills .container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: space-between;
+    grid-gap: 20px;
+    text-align: center;
+}
+
+#skills img{
+    height: 120px;
+    margin-bottom: 10px;
+}
+
 /*projects section*/
 
 #projects{
@@ -282,7 +305,7 @@ header .container{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #1a1a1a;
+    background-color: #000;
 }
 
 #projects .container{
@@ -299,7 +322,7 @@ header .container{
 
 .project{
     color: #FFF;
-    height: 300px;
+    height: 280px;
     background-image: url(../images/projects/awax.png);
     background-position: center;
     background-size: cover;
@@ -368,7 +391,7 @@ header .container{
 }
 
 #contact{
-    background-color: #000;
+    background-color: #1a1a1a;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -387,11 +410,11 @@ header .container{
     justify-content: space-between;
     grid-gap: 20px;
     text-align: center;
-    color: #999;
+    color: #FFF;
 }
 
 #contact a{
-    color: #999;
+    color: #FFF;
 }
 
 #contact .whatsapp{
@@ -400,7 +423,6 @@ header .container{
 
 @media (max-width: 919px){
     #contact .container{
-        display: grid;
         justify-content: center;
         grid-template-columns: 1fr 1fr;
         grid-gap: 30px;
