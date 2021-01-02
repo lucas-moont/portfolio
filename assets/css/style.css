@@ -48,6 +48,16 @@ h5{
     margin-bottom: 10px;
 }
 
+@media (max-width: 374px){
+    h2{
+        font-size: 30px;
+    }
+
+    h3{
+        font-size: 24px;
+    }
+}
+
 section{
     padding: 50px 20px;
 }
@@ -178,6 +188,16 @@ header .container{
     animation-delay: 0.3s;
 }
 
+@media (max-width: 374px){
+    #banner h1{
+        font-size: 50px;
+    }
+
+    #banner p{
+        font-size: 20px;
+    }
+}
+
 /*about*/
 
 #about{
@@ -206,6 +226,7 @@ header .container{
     justify-content: center;
 }
 
+
 /*add media queries for xsmall devices*/
 
 #about a{
@@ -221,6 +242,7 @@ header .container{
     border: 2px solid #D43F52;
     transition: 0.2s;
     max-height: 100vh;
+    text-align: center;
 }
 
 #about a:hover{
@@ -230,6 +252,18 @@ header .container{
 
 #about img{
     max-width: 100%;
+}
+
+@media (max-width: 374px){
+    #about .container{
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); 
+        font-size: 14px;
+    }
+
+    #about a{
+        font-size: 16px;
+        margin-bottom: 40px;
+    }
 }
 
 /*serviços*/
