@@ -48,16 +48,6 @@ h5{
     margin-bottom: 10px;
 }
 
-@media (max-width: 374px){
-    h2{
-        font-size: 30px;
-    }
-
-    h3{
-        font-size: 24px;
-    }
-}
-
 section{
     padding: 50px 20px;
 }
@@ -188,16 +178,6 @@ header .container{
     animation-delay: 0.3s;
 }
 
-@media (max-width: 374px){
-    #banner h1{
-        font-size: 50px;
-    }
-
-    #banner p{
-        font-size: 20px;
-    }
-}
-
 /*about*/
 
 #about{
@@ -252,18 +232,6 @@ header .container{
 
 #about img{
     max-width: 100%;
-}
-
-@media (max-width: 374px){
-    #about .container{
-        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); 
-        font-size: 14px;
-    }
-
-    #about a{
-        font-size: 16px;
-        margin-bottom: 40px;
-    }
 }
 
 /*serviços*/
@@ -526,5 +494,43 @@ header .container{
     #skills .container{
         grid-template-columns: 1fr;
         grid-gap: 40px;
+    }
+}
+
+/*x-small devices responsivity*/
+
+@media (max-width: 374px){
+    h2{
+        font-size: 30px;
+    }
+
+    h3{
+        font-size: 24px;
+    }
+
+    #banner h1{
+        font-size: 50px;
+    }
+
+    #banner p{
+        font-size: 20px;
+    }
+
+    #about .container{
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); 
+        font-size: 14px;
+    }
+
+    #about a{
+        font-size: 16px;
+        margin-bottom: 40px;
+    }
+
+    .service{
+        width: 260px
+    }
+
+    #skills img{
+        height: 80px;
     }
 }
