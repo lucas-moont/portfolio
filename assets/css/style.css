@@ -6,6 +6,7 @@
 
 body{
     font-family:  'Raleway', sans-serif;
+    overflow-x: hidden;
 }
 
 @font-face{
@@ -77,6 +78,25 @@ header .container{
     margin-right: 15px;
 }
 
+.menu{
+    display: flex;
+}
+
+.menuMobile{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+
+.menuMobile div{
+    background-color: #FFF;
+    height: 2px;
+    width: 35px;
+    margin: 3px 0;
+}
+
 .menu ul{
     display: flex;
 }
@@ -85,6 +105,19 @@ header .container{
     list-style-type: none;
     position: relative;
     margin-left: 15px;
+}
+
+@media (max-width: 750px){
+    .logo{
+        font-size: 20px;
+    }
+    .menuMobile{
+        display: flex;
+    }
+    
+    .menu nav{
+        display: none;
+    }
 }
 
 .menu ul li::after{
@@ -327,6 +360,11 @@ header .container{
     background-position: center;
     background-size: cover;
     text-align: center;
+    transition: 0.4s;
+}
+
+.project:hover{
+    padding: 10px;
 }
 
 .project div{
@@ -350,16 +388,32 @@ header .container{
 
 .project p{
     font-size: 14px;
-    display: flex;
-    align-items: center;
 }
 
 .project a{
+    display: inline-flex;
+    align-items: center;
     margin-right: 10px;
     text-decoration: none;
     color: #FFF;
     letter-spacing: 2px;
-    margin-left: 3px;
+    position: relative;
+    padding: 5px;
+}
+
+.project a::after{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -5px;
+    left: 5px;
+    background-color: #fff;
+    transition: 0.3s;
+}
+
+.project a:hover::after{
+    width: 90%;
 }
 
 .awax div{

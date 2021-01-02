@@ -16,17 +16,12 @@
     }
 }
 
-@keyframes givepad{
-    from{
-        padding: 0;
-    }to{
-        padding: 10px;
-    }
-}
-
+/*
 .project:hover{
     animation-name: givepad;
     animation-duration: 0.4s;
     animation-fill-mode: forwards;
     animation-delay: 0.25s;
 }
+
+*/
