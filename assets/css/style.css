@@ -217,8 +217,6 @@ header .container{
 }
 
 
-/*add media queries for xsmall devices*/
-
 #about a{
     display: inline-block;
     margin-top: 30px;
@@ -242,6 +240,19 @@ header .container{
 
 #about img{
     max-width: 100%;
+}
+
+@media (max-width: 787px){
+    #about .container div:last-child{
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    #about img{
+        width: 100%;
+        min-width: 260px;
+        max-width: 500px;
+    }
 }
 
 /*serviços*/
