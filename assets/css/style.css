@@ -130,35 +130,6 @@ header .container{
     padding: 10px 5px;
 }
 
-@media (max-width: 750px){
-    .menuMobile{
-        display: flex;
-    }
-    
-    .menu ul{
-        display: none;
-        flex-direction: column;
-        width: 100%;
-        position: absolute;
-        top: 80px;
-        left: 0;
-        background-color: #D43F52;
-        padding: 0 15px;
-    }
-
-    .menu ul li{
-        margin-left: 0;
-        padding: 15px 0 5px;
-        margin-bottom: 40px;
-        border-bottom: 1px solid #FFF;
-    }
-
-    .menu ul li::after{
-        bottom: 0px;
-        width: 100px;
-    }
-}
-
 /*banner section*/
 
 #banner {
@@ -518,6 +489,44 @@ header .container{
 }
 
 /*x-small devices responsivity*/
+
+@media (max-width: 750px){
+    .menuMobile{
+        display: flex;
+    }
+    
+    .menu ul{
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        background-color: #D43F52;
+        padding: 0 15px;
+    }
+
+    .menu ul li{
+        margin-left: 0;
+        padding: 15px 0 5px;
+        margin-bottom: 20px;
+    }
+
+    .menu ul li::after{
+        bottom: 5px;
+        width: 100px;
+    }
+
+    .menu ul li a{
+        display: block;
+        border-bottom: 1px solid #FFF;
+        padding: 10px 0;
+    }
+
+    #banner{
+        height: calc(100vh - 96px);
+    }
+}
 
     
 @media (max-width: 374px){
