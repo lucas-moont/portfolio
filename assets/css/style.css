@@ -136,6 +136,7 @@ header .container{
     }
     
     .menu ul{
+        display: none;
         flex-direction: column;
         width: 100%;
         position: absolute;
@@ -181,6 +182,7 @@ header .container{
     justify-content: center;
     align-items: center;
     color: #FFF;
+    padding: 10px;
 }
 
 #banner h1{
@@ -521,6 +523,10 @@ header .container{
 @media (max-width: 374px){
     header{
         padding: 20px 10px;
+    }
+
+    #banner{
+        height: calc(100vh - 76px);
     }
 
     .logo{
