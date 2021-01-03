@@ -48,7 +48,8 @@ h5{
     margin-bottom: 10px;
 }
 
-section{
+section, 
+footer{
     padding: 50px 20px;
 }
 
@@ -159,14 +160,14 @@ header .container{
 #banner h1{
     color: #D43F52;
     font-size: 60px;
-    animation-delay: 0.1s;
+    animation-delay: 0.4s;
     line-height: 55px;
 }
 
 #banner p{
     margin-top: 15px;
     font-size: 30px;
-    animation-delay: 0.3s;
+    animation-delay: 0.7s;
 }
 
 /*about*/
@@ -488,7 +489,21 @@ header .container{
     }
 }
 
-/*x-small devices responsivity*/
+footer{
+    text-align: center;
+    background-color: #000;
+    color: #999;
+}
+
+footer a{
+    color: #D43F52;
+}
+
+.copyright{
+    margin-top: 25px;
+}
+
+/*tablet responsivity*/
 
 @media (max-width: 750px){
     .menuMobile{
@@ -528,7 +543,10 @@ header .container{
     }
 }
 
-    
+
+
+/*x-small devices responsivity*/
+
 @media (max-width: 374px){
     header{
         padding: 20px 10px;
