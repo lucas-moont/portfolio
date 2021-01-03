@@ -535,6 +535,10 @@ footer a{
 /*tablet responsivity*/
 
 @media (max-width: 750px){
+    .logo{
+        margin-top: 0;
+    }
+    
     .menuMobile{
         display: flex;
     }
