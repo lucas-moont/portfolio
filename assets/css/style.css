@@ -170,6 +170,24 @@ header .container{
     animation-delay: 0.7s;
 }
 
+#banner span{
+    animation-delay: 1s;
+    text-align: center;
+}
+
+#banner a{
+    display: inline-block;
+    padding: 15px 5px;
+}
+
+#banner img{
+    height: 30px;
+}
+
+#banner .github{
+    filter: invert(97%) sepia(97%) saturate(0%) hue-rotate(4deg) brightness(103%) contrast(103%);
+}
+
 /*about*/
 
 #about{
