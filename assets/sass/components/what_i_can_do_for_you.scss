@@ -1,0 +1,66 @@
+#whatICanDoForYou {
+  padding: 128px 32px;
+
+  h2 {
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 8px;
+    font-weight: 600;
+  }
+
+  h3 {
+    font-size: 1.2em;
+    text-align: center;
+  }
+
+  h4 {
+    font-size: 1.25em;
+    font-weight: 600;
+    margin-bottom: 4px;
+  }
+
+  svg {
+    height: 80px;
+    margin-bottom: 16px;
+  }
+
+  p {
+    max-width: 450px;
+  }
+
+  .whatIcanDoForYouGrid {
+    margin-top: 32px;
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* duas colunas com tamanhos iguais */
+    grid-template-rows: auto auto; /* duas linhas automáticas */
+    grid-template-areas: 
+      "whatIDoOne whatIDoOne"
+      "whatIDoTwo whatIDoThree";
+    position: relative
+  }
+
+  .whatICanDoForYouColumn {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 32px 32px;
+  }
+  
+  .whatIcanDoForYouColumnOne {
+    grid-area: whatIDoOne;
+  }
+  
+  .whatIcanDoForYouColumnTwo {
+    grid-area: whatIDoTwo;
+  }
+  
+  .whatIcanDoForYouColumnThree {
+    grid-area: whatIDoThree;
+  }
+  
+  .whatIcanDoForYouColumnTwo,
+  .whatIcanDoForYouColumnThree{
+    padding-top: 128px;
+  }
+}
