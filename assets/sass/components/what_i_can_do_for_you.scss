@@ -36,7 +36,7 @@
     grid-template-areas: 
       "whatIDoOne whatIDoOne"
       "whatIDoTwo whatIDoThree";
-    position: relative
+    position: relative;
   }
 
   .whatICanDoForYouColumn {
@@ -45,6 +45,7 @@
     flex-direction: column;
     align-items: center;
     padding: 32px 32px;
+    position: relative;
   }
   
   .whatIcanDoForYouColumnOne {
@@ -62,5 +63,69 @@
   .whatIcanDoForYouColumnTwo,
   .whatIcanDoForYouColumnThree{
     padding-top: 128px;
+  }
+
+  .whatICanDoForYouBorder{
+    display: inline-block;
+    position: absolute;
+  }
+
+  .whatICanDoForYouLeftHorizontalBorder,
+  .whatICanDoForRightHorizontalBorder{
+    position: absolute;
+    top: calc(50% - 20px);
+    width: 400px;
+    height: 2px;
+    transform-style: preserve-3d;
+    will-change: transform;
+
+    .whatICanDoForYouBorderInnerColor{
+      width: 0;
+      height: 100%;
+      background-color: $strong-red;
+      display: inline-block;
+      transition: 0.5s;
+    }
+  }
+
+  .whatICanDoForYouLeftHorizontalBorder{
+    right: calc(50% - 17px);
+    transform: rotate(20deg);
+  }
+
+  .whatICanDoForRightHorizontalBorder{
+    left: calc(50% - 17px);
+    transform: rotate(-20deg) rotateY(-180deg);
+  }
+
+  .whatICanDoForVerticalBorder{
+    right: 50%;
+    top: calc(50% + 62px);
+    height: 300px;
+    width: 2px;
+    rotate: 180deg;
+
+    .whatICanDoForYouBorderInnerColor{
+      background-color: $strong-red;
+      width: 100%;
+      display: inline-block;
+      transition: 0.5s;
+      height: 0;
+    }
+  }
+
+  &:hover{
+    .whatICanDoForRightHorizontalBorder,
+    .whatICanDoForYouLeftHorizontalBorder{
+      .whatICanDoForYouBorderInnerColor{
+        width: 100%;
+      }
+    }
+
+    .whatICanDoForVerticalBorder{
+      .whatICanDoForYouBorderInnerColor{
+        height: 100%;
+      }
+    }
   }
 }
