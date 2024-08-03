@@ -1,0 +1,42 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: $black;
+  color: $white;
+  font-family: "Roboto", sans-serif;
+}
+
+::-webkit-scrollbar {
+  width: 5px; /* largura da barra de rolagem */
+}
+
+/* Estiliza a parte interna da barra de rolagem */
+::-webkit-scrollbar-track {
+  background: $black; /* cor do track */
+}
+
+::-webkit-scrollbar-thumb {
+  background: $strong-red; /* cor do polegar */
+  border-radius: 10px; /* arredonda o polegar */
+}
+
+#shadow-host-companion{
+  display: none !important;
+}
+
+.redText{
+  color: $strong-red;
+}
+
+.spaceText{
+  letter-spacing: 5px;
+}
+
+.container{
+  width: 100%;
+  max-width: $large-container-width;
+}

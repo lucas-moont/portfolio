@@ -1,0 +1,22 @@
+.background--custom {
+  background-color: #000000;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  overflow: hidden;
+  z-index: -2;
+  top: 0;
+  left: 0;
+}
+canvas#canvas {
+  z-index: -1;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transform: rotate(8deg) scale(2) translateY(0%);
+  --gradient-color-1: #000000; 
+  --gradient-color-2: #000000; 
+  --gradient-color-3: #000000;  
+  --gradient-color-4: #3D0201;
+  --gradient-speed: 0.000018;
+}

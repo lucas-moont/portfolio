@@ -1,0 +1,15 @@
+#mainIntro {
+  height: 100vh;
+  align-items: center;
+  position: relative;
+}
+
+.introTextBox{
+  font-size: 2em;
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.1em;
+
+  strong {
+    font-weight: 500;
+  }
+}
