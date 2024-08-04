@@ -1,0 +1,13 @@
+.whatIKnowColumns{
+  display: flex;
+  gap: 64px;
+  align-items: stretch;
+}
+
+.whatIKnowColumn{
+  padding: 32px;
+  background-color: $lighterBlack;
+  border: 2px solid $strong-red;
+  border-radius: 12px;
+  width: 50%;
+}
