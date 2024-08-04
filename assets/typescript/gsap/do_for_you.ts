@@ -3,21 +3,22 @@
 
 
 document.addEventListener("DOMContentLoaded", () => {
+  gsap.registerPlugin(ScrollTrigger)
   function growWidth(element: HTMLElement, width: number | string, section: HTMLElement) {
     gsap.fromTo(
       element,
       {
         width: "0%",
-        ease: "linear",
       },
       {
         width,
-        duration: 0.7,
+        duration: 0.8,
+        ease: "power1",
         scrollTrigger: {
           trigger: section,
           start: "center center",
           end: "center center",
-          markers: true,
+          ease: "power4"
         }
       }
     );
@@ -28,16 +29,16 @@ document.addEventListener("DOMContentLoaded", () => {
       element,
       {
         height: "0%",
-        ease: "linear",
+        ease: "bounce.out",
       },
       {
         height,
-        duration: 0.7,
+        duration: 0.8,
+        ease: "power1",
         scrollTrigger: {
           trigger: section,
           start: "center center",
           end: "center center",
-          markers: true,
         }
       }
     );

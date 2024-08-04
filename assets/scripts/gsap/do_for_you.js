@@ -2,33 +2,34 @@
 //import { growWidth } from "../utils/grow-width";
 //TODO: LEVAR GROWHEIGHT PARA UM UTILS
 document.addEventListener("DOMContentLoaded", () => {
+    gsap.registerPlugin(ScrollTrigger);
     function growWidth(element, width, section) {
         gsap.fromTo(element, {
             width: "0%",
-            ease: "linear",
         }, {
             width,
-            duration: 0.7,
+            duration: 0.8,
+            ease: "power1",
             scrollTrigger: {
                 trigger: section,
                 start: "center center",
                 end: "center center",
-                markers: true,
+                ease: "power4"
             }
         });
     }
     function growHeight(element, height, section) {
         gsap.fromTo(element, {
             height: "0%",
-            ease: "linear",
+            ease: "bounce.out",
         }, {
             height,
-            duration: 0.7,
+            duration: 0.8,
+            ease: "power1",
             scrollTrigger: {
                 trigger: section,
                 start: "center center",
                 end: "center center",
-                markers: true,
             }
         });
     }
