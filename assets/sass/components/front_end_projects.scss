@@ -1,0 +1,56 @@
+#frontEndProjects {
+  padding: 64px 0;
+  flex-direction: column;
+  
+  .container {
+    padding: 0 32px;
+  }
+  
+  h2,
+  h3 {
+    text-align: left;
+  }
+
+  .frontEndProjectsFlex{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 64px;
+  }
+
+  .frontEndProjectColumn{
+    width: 25%;
+    min-width: 250px;
+    min-height: 400px;
+    display: flex;
+    align-items: flex-end;
+    background-image: url('../images/projects/insure.png');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+
+    &::after{
+      content: '';
+      background-color: $overlayRed;
+      height: 100%;
+      width: 100%;
+      left: 0;
+      top: 0;
+      position: absolute;
+      z-index: 1;
+      transition: 0.5s;
+    }
+
+    &:hover::after{
+      opacity: 0;
+      transform: scale(0.8);
+    }
+  }
+
+  .frontEndProjectDetails{
+    background-color: #1f1f1fdd;
+    width: 100%;
+    min-height: 80px;
+    padding: 16px;
+    z-index: 4;
+  }
+}
