@@ -16,9 +16,8 @@ document.addEventListener("DOMContentLoaded", () => {
         ease: "power1",
         scrollTrigger: {
           trigger: section,
-          start: "top center",
-          end: "bottom center",
-          ease: "power4"
+          start: "center center",
+          end: "center center"
         }
       }
     );
@@ -37,8 +36,8 @@ document.addEventListener("DOMContentLoaded", () => {
         ease: "power1",
         scrollTrigger: {
           trigger: section,
-          start: "top center",
-          end: "bottom center",
+          start: "center center",
+          end: "center center",
         }
       }
     );

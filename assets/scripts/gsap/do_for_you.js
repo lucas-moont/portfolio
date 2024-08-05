@@ -13,8 +13,7 @@ document.addEventListener("DOMContentLoaded", () => {
             scrollTrigger: {
                 trigger: section,
                 start: "center center",
-                end: "center center",
-                ease: "power4"
+                end: "center center"
             }
         });
     }
