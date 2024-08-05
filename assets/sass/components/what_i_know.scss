@@ -1,13 +1,40 @@
-.whatIKnowColumns{
+.whatIKnowColumns {
   display: flex;
   gap: 64px;
   align-items: stretch;
+  margin-top: 64px;
+  justify-content: center;
 }
 
-.whatIKnowColumn{
+.whatIKnowColumn {
   padding: 32px;
   background-color: $lighterBlack;
   border: 2px solid $strong-red;
   border-radius: 12px;
-  width: 50%;
+  width: 33.3%;
+  -webkit-box-shadow: 0px 0px 24px 1px #af0101;
+  box-shadow: 0px 0px 24px 1px #af0101;
+
+  h3 {
+    font-size: 1.375rem;
+    font-weight: 600;
+    margin-bottom: 16px;
+  }
+
+  svg {
+    height: 51px;
+    width: 100%;
+  }
+}
+
+.technologiesIKnowFlex {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.technologyIKnow {
+  width: calc(33.3%);
+  text-align: center;
+  padding: 8px;
 }
