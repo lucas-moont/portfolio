@@ -13,6 +13,12 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
       rel="stylesheet"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <header></header>
@@ -1156,7 +1162,9 @@
                   </svg>
                   - Demo</a
                 >
-                <a href="https://github.com/lucas-moont/sunny-side-lp" target="_blank"
+                <a
+                  href="https://github.com/lucas-moont/sunny-side-lp"
+                  target="_blank"
                   ><svg
                     viewBox="0 0 48 48"
                     id="Layer_2"
@@ -1201,7 +1209,10 @@
               </div>
               <p class="frontEndProjectName">TIP CALCULATOR</p>
               <div class="frontEndProjectsLinks">
-                <a href="https://tip-calculator-lac-zeta.vercel.app/" target="_blank">
+                <a
+                  href="https://tip-calculator-lac-zeta.vercel.app/"
+                  target="_blank"
+                >
                   <svg
                     viewBox="0 0 24 24"
                     fill="none"
@@ -1237,7 +1248,9 @@
                   </svg>
                   - Demo</a
                 >
-                <a href="https://github.com/lucas-moont/tip-calculator" target="_blank"
+                <a
+                  href="https://github.com/lucas-moont/tip-calculator"
+                  target="_blank"
                   ><svg
                     viewBox="0 0 48 48"
                     id="Layer_2"
@@ -1282,7 +1295,10 @@
               </div>
               <p class="frontEndProjectName">HUDDLE</p>
               <div class="frontEndProjectsLinks">
-                <a href="https://huddle-landing-page-rosy-nine.vercel.app/" target="_blank">
+                <a
+                  href="https://huddle-landing-page-rosy-nine.vercel.app/"
+                  target="_blank"
+                >
                   <svg
                     viewBox="0 0 24 24"
                     fill="none"
@@ -1318,7 +1334,9 @@
                   </svg>
                   - Demo</a
                 >
-                <a href="https://github.com/lucas-moont/huddle-landing-page" target="_blank"
+                <a
+                  href="https://github.com/lucas-moont/huddle-landing-page"
+                  target="_blank"
                   ><svg
                     viewBox="0 0 48 48"
                     id="Layer_2"
@@ -1358,7 +1376,8 @@
           <div class="frontEndProjectColumn">
             <div class="frontEndProjectDetails">
               <div class="tagsWrapper">
-                <span class="tag">WORDPRESS</span><span class="tag">ELEMENTOR</span>
+                <span class="tag">WORDPRESS</span
+                ><span class="tag">ELEMENTOR</span>
               </div>
               <p class="frontEndProjectName">BETALAB</p>
               <div class="frontEndProjectsLinks">
@@ -1404,8 +1423,8 @@
           <div class="frontEndProjectColumn">
             <div class="frontEndProjectDetails">
               <div class="tagsWrapper">
-                <span class="tag">WORDPRESS</span><span class="tag">ELEMENTOR</span
-                >
+                <span class="tag">WORDPRESS</span
+                ><span class="tag">ELEMENTOR</span>
               </div>
               <p class="frontEndProjectName">EU QUERO GRANA</p>
               <div class="frontEndProjectsLinks">
@@ -1443,20 +1462,55 @@
                       ></path>
                     </g>
                   </svg>
-                  - Demo</a>
+                  - Demo</a
+                >
               </div>
             </div>
           </div>
         </div>
       </section>
-      <section id="backEndProjects">
-        <h2>
-          <span class="redText">&lt;</span><span
-            class="backEndPJTitleTyping"
-          ></span
-          ><span class="frontEndPJTitleTypingPtTwo"></span>
-          <span class="redText">/&gt;</span> de projetos
-        </h2>
+      <section id="backEndProjectsSection">
+        <div class="container">
+          <h2>
+            <span class="redText">&lt;</span
+            ><span class="backEndPJTitleTyping"></span
+            ><span class="frontEndPJTitleTypingPtTwo"></span>
+            <span class="redText">/&gt;</span> dos projetos
+          </h2>
+          <div class="backEndProjects sourceCodeProFontFamily">
+            <p class="backEndProjectsName">Gym API</p>
+            <p class="backEndProjectsTechs"><span class="redText">Node.js</span> | <span class="redText">Vitest</span> | <span class="redText">Fastify</span> | <span class="redText">PostgreSQL</span> | <span class="redText">Docker</span> | <span class="redText"><a href="https://github.com/lucas-moont/gympass-api-solid" target="_blank">Code</a></span></p>
+            <p class="backEndProjectsDescription">
+              Solução de plataforma para academias que permite aos usuários
+              realizar o checkout de planos de forma dinâmica, com a restrição
+              de geolocalização. 
+              <br />
+              Além disso, a plataforma possui um controle de permissões bem
+              definido, onde apenas administradores têm acesso à funcionalidade
+              de registrar, editar e excluir academias. Esse controle de acesso
+              foi implementado para garantir que a administração da plataforma
+              seja segura e restrita.
+              <br />
+              Para assegurar a qualidade do código e a estabilidade da API,
+              foram realizados testes automatizados com Vitest.
+            </p>
+
+          </div>
+          <div class="backEndProjects sourceCodeProFontFamily">
+            <p class="backEndProjectsName">Restaurante API</p>
+            <p class="backEndProjectsTechs"><span class="redText">Node.js</span> | <span class="redText">Express</span> | <span class="redText">SQLite</span> | <span class="redText">Knex</span> | <span class="redText"><a href="https://github.com/lucas-moont/restaurant-api" target="_blank">Code</a></span></p>
+            <p class="backEndProjectsDescription">
+              A Restaurant API é uma solução desenvolvida para gerenciar
+              restaurantes de forma eficiente, permitindo o cadastro de mesas e
+              produtos, além da atualização e exclusão de itens do menu. Com
+              ela, é possível abrir e fechar contas vinculadas às mesas,
+              garantindo um controle preciso dos pedidos. Construída com Node.js
+              e Express, a API utiliza SQLite como banco de dados, sendo
+              gerenciado via knex para maior praticidade.
+            </p>
+
+          </div>
+        </div>
       </section>
     </main>
     <footer></footer>
@@ -1501,22 +1555,20 @@
         backSpeed: 25,
       });
 
-      var backEndPJTitleTyping = new Typed(
-        ".backEndPJTitleTyping",
-        {
-          strings: ["Back-End", "Verso"],
-          typeSpeed: 25,
-          loop: true,
-          loopCount: Infinity,
-          backDelay: 2000,
-          backSpeed: 25,
-        }
-      );
+      var backEndPJTitleTyping = new Typed(".backEndPJTitleTyping", {
+        strings: ["Back-End", "Verso"],
+        typeSpeed: 25,
+        loop: true,
+        loopCount: Infinity,
+        backDelay: 2000,
+        backSpeed: 25,
+      });
     </script>
 
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
     <script src="assets/scripts/gsap/do_for_you.js" type="module"></script>
     <script src="assets/scripts/gsap/what_i_know.js"></script>
+    <script src="assets/scripts/gsap/back_end_projects.js"></script>
   </body>
 </html>

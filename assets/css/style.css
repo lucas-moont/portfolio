@@ -2,6 +2,12 @@
 /*COLOR VARIABLES*/
 /*FONT VARIABLES*/
 /*SIZE VARIABLES*/
+.sourceCodeProFontFamily {
+  font-family: "Source Code Pro", monospace;
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -350,8 +356,32 @@ canvas#canvas {
   width: auto;
 }
 
-#backEndProjects h2 {
+#backEndProjectsSection h2 {
   text-align: left;
+  margin-bottom: 64px;
+}
+#backEndProjectsSection .backEndProjects {
+  border: 1px solid #af0101;
+  padding: 32px;
+  border-radius: 16px;
+}
+#backEndProjectsSection .backEndProjects:not(:last-child) {
+  margin-bottom: 32px;
+}
+#backEndProjectsSection .backEndProjectsName {
+  font-size: 1.3em;
+  margin-bottom: 4px;
+}
+#backEndProjectsSection .backEndProjectsTechs {
+  font-size: 0.8em;
+  margin-bottom: 16px;
+}
+#backEndProjectsSection .backEndProjectsTechs a {
+  color: #af0101;
+}
+#backEndProjectsSection .backEndProjectsDescription {
+  font-size: 0.87em;
+  margin-bottom: 16px;
 }
 
 /*# sourceMappingURL=style.css.map */

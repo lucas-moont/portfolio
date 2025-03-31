@@ -1,0 +1,34 @@
+#backEndProjectsSection{
+  h2{
+    text-align: left;
+    margin-bottom: 64px;
+  }
+
+  .backEndProjects{
+    border: 1px solid $strong-red;
+    padding: 32px;
+    border-radius: 16px;
+    &:not(:last-child){
+      margin-bottom: 32px;
+    }
+  }
+
+  .backEndProjectsName{
+    font-size: 1.3em;
+    margin-bottom: 4px;
+  }
+
+  .backEndProjectsTechs{
+    font-size: 0.8em;
+    margin-bottom: 16px;
+
+    a{
+      color: $strong-red;
+    }
+  }
+
+  .backEndProjectsDescription{
+    font-size: 0.87em;
+    margin-bottom: 16px;
+  }
+}
