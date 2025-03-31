@@ -1,5 +1,6 @@
 @import 'utils/variables';
 @import 'utils/fonts.scss';
+@import 'utils/flex.scss';
 @import 'layout/body';
 @import 'components/intro.scss';
 @import 'components/section';
@@ -8,4 +9,6 @@
 @import 'components/what_i_can_do_for_you.scss';
 @import 'components/what_i_know.scss';
 @import 'components/front_end_projects.scss';
-@import 'components/back_end_projects.scss'
+@import 'components/back_end_projects.scss';
+@import 'components/get_to_know_me.scss';
+@import 'utils/gap.scss'

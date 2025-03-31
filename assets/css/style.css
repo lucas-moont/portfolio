@@ -8,6 +8,10 @@
   font-weight: 400;
 }
 
+.flex {
+  display: flex;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -382,6 +386,40 @@ canvas#canvas {
 #backEndProjectsSection .backEndProjectsDescription {
   font-size: 0.87em;
   margin-bottom: 16px;
+}
+
+#getToKnowMe {
+  position: relative;
+  padding-right: 128px;
+}
+#getToKnowMe h2 {
+  text-align: left;
+}
+#getToKnowMe .pfpImage {
+  width: 100%;
+}
+#getToKnowMe .col {
+  width: 50%;
+  flex-shrink: 0;
+}
+#getToKnowMe .getToKnowMeDescription {
+  font-size: 1.4em;
+}
+#getToKnowMe .socialIcons {
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  gap: 1em;
+  margin-top: 1em;
+  height: calc(100% - 128px);
+  background-color: red;
+  width: 64px;
+  right: 32px;
+  top: 60px;
+}
+
+.gap-m {
+  gap: 32px;
 }
 
 /*# sourceMappingURL=style.css.map */
