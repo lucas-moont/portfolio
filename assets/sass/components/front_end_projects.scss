@@ -27,6 +27,7 @@
     background-size: cover;
     background-position: center;
     position: relative;
+    
 
     &::after{
       content: '';
@@ -48,6 +49,30 @@
     p{
       margin: 16px 0 2px;
     }
+  }
+
+  .frontEndProjectColumn:nth-of-type(2){
+    background-image: url('../images/projects/blogr.png');
+  }
+
+  .frontEndProjectColumn:nth-of-type(4){
+    background-image: url('../images/projects/sunny-side.png');
+  }
+
+  .frontEndProjectColumn:nth-of-type(5){
+    background-image: url('../images/projects/tip-calculator.png');
+  }
+
+  .frontEndProjectColumn:nth-of-type(6){
+    background-image: url('../images/projects/huddle.png');
+  }
+
+  .frontEndProjectColumn:nth-of-type(8){
+    background-image: url('../images/projects/eqg.png');
+  }
+
+  .frontEndProjectColumn:nth-of-type(3){
+    background-image: url('../images/projects/space-tourism.png');
   }
 
   .frontEndProjectDetails{
