@@ -6,6 +6,8 @@ header{
   left: 0;
   z-index: 1000;
   color: $strong-red;
+  display: flex;
+  justify-content: center;
 
   .container{
     align-items: center;
