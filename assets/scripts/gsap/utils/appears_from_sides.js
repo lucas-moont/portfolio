@@ -35,6 +35,9 @@ document.addEventListener("DOMContentLoaded", () => {
     }
     const appearFromLeftWithOpacity = document.querySelector(".appearFromLeftWithOpacity");
     const appearFromRightWithOpacity = document.querySelector(".appearFromRightWithOpacity");
-    appearsFromLeftWithOpacityChange(appearFromLeftWithOpacity);
-    appearsFromRightWithOpacityChange(appearFromRightWithOpacity);
+    const isMobile = window.matchMedia("(max-width: 768px)").matches;
+    if (!isMobile) {
+        appearsFromLeftWithOpacityChange(appearFromLeftWithOpacity);
+        appearsFromRightWithOpacityChange(appearFromRightWithOpacity);
+    }
 });

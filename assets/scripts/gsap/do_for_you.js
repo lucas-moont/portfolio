@@ -13,8 +13,8 @@ document.addEventListener("DOMContentLoaded", () => {
             scrollTrigger: {
                 trigger: section,
                 start: "center center",
-                end: "center center"
-            }
+                end: "center center",
+            },
         });
     }
     function growHeight(element, height, section) {
@@ -29,21 +29,24 @@ document.addEventListener("DOMContentLoaded", () => {
                 trigger: section,
                 start: "center center",
                 end: "center center",
-            }
+            },
         });
     }
     const whatICanDoForYouSection = document.querySelector("#whatICanDoForYou");
     const whatICanDoForYouLeftHorizontalBorder = document.querySelector(".whatICanDoForYouLeftHorizontalBorder .whatICanDoForYouBorderInnerColor");
     const whatICanDoForRightHorizontalBorder = document.querySelector(".whatICanDoForRightHorizontalBorder .whatICanDoForYouBorderInnerColor");
     const whatIcanDoForVerticalBorder = document.querySelector(".whatICanDoForVerticalBorder .whatICanDoForYouBorderInnerColor");
-    if (whatICanDoForYouLeftHorizontalBorder && whatICanDoForYouSection) {
-        growWidth(whatICanDoForYouLeftHorizontalBorder, "100%", whatICanDoForYouSection);
-    }
-    if (whatICanDoForRightHorizontalBorder && whatICanDoForYouSection) {
-        growWidth(whatICanDoForRightHorizontalBorder, "100%", whatICanDoForYouSection);
-    }
-    console.log(whatIcanDoForVerticalBorder);
-    if (whatIcanDoForVerticalBorder && whatICanDoForYouSection) {
-        growHeight(whatIcanDoForVerticalBorder, "100%", whatICanDoForYouSection);
+    const isMobile = window.matchMedia("(max-width: 768px)").matches;
+    if (!isMobile) {
+        if (whatICanDoForYouLeftHorizontalBorder && whatICanDoForYouSection) {
+            growWidth(whatICanDoForYouLeftHorizontalBorder, "100%", whatICanDoForYouSection);
+        }
+        if (whatICanDoForRightHorizontalBorder && whatICanDoForYouSection) {
+            growWidth(whatICanDoForRightHorizontalBorder, "100%", whatICanDoForYouSection);
+        }
+        console.log(whatIcanDoForVerticalBorder);
+        if (whatIcanDoForVerticalBorder && whatICanDoForYouSection) {
+            growHeight(whatIcanDoForVerticalBorder, "100%", whatICanDoForYouSection);
+        }
     }
 });

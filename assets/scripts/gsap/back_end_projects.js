@@ -17,7 +17,8 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
     const backEndProjects = document.querySelectorAll(".backEndProjects");
-    if (backEndProjects.length > 0) {
+    const isMobile = window.matchMedia("(max-width: 768px)").matches;
+    if (backEndProjects.length > 0 && !isMobile) {
         backEndProjects.forEach(backEndProject => {
             appearsFromLeft(backEndProject);
         });

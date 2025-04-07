@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
   gsap.registerPlugin(ScrollTrigger);
 
-  function appearsFromLeftWithOpacityChange(element: HTMLElement){
+  function appearsFromLeftWithOpacityChange(element: HTMLElement) {
     gsap.fromTo(
       element,
       {
@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", () => {
     );
   }
 
-  function appearsFromRightWithOpacityChange(element: HTMLElement){
+  function appearsFromRightWithOpacityChange(element: HTMLElement) {
     gsap.fromTo(
       element,
       {
@@ -43,9 +43,18 @@ document.addEventListener("DOMContentLoaded", () => {
     );
   }
 
-  const appearFromLeftWithOpacity = document.querySelector(".appearFromLeftWithOpacity");
-  const appearFromRightWithOpacity = document.querySelector(".appearFromRightWithOpacity");
+  const appearFromLeftWithOpacity = document.querySelector(
+    ".appearFromLeftWithOpacity"
+  );
+  const appearFromRightWithOpacity = document.querySelector(
+    ".appearFromRightWithOpacity"
+  );
+
+  const isMobile = window.matchMedia("(max-width: 768px)").matches;
+
+  if (!isMobile) {
+    appearsFromLeftWithOpacityChange(appearFromLeftWithOpacity as HTMLElement);
+    appearsFromRightWithOpacityChange(appearFromRightWithOpacity as HTMLElement);
+  }
   
-  appearsFromLeftWithOpacityChange(appearFromLeftWithOpacity as HTMLElement);
-  appearsFromRightWithOpacityChange(appearFromRightWithOpacity as HTMLElement);
-})
+});

@@ -19,10 +19,13 @@ document.addEventListener('DOMContentLoaded', () => {
     const iKnowColumn3 = document.querySelector('.whatIKnowColumn:nth-of-type(3)');
     const iKnowColumnsParent = document.querySelector('.whatIKnowColumns');
     console.log(iKnowColumn1, iKnowColumnsParent);
-    if (iKnowColumn1 && iKnowColumnsParent) {
-        spredColumns(iKnowColumn1, 0, null, iKnowColumnsParent);
-    }
-    if (iKnowColumn3 && iKnowColumnsParent) {
-        spredColumns(iKnowColumn3, null, 0, iKnowColumnsParent);
+    const isMobile = window.matchMedia("(max-width: 768px)").matches;
+    if (!isMobile) {
+        if (iKnowColumn1 && iKnowColumnsParent) {
+            spredColumns(iKnowColumn1, 0, null, iKnowColumnsParent);
+        }
+        if (iKnowColumn3 && iKnowColumnsParent) {
+            spredColumns(iKnowColumn3, null, 0, iKnowColumnsParent);
+        }
     }
 });

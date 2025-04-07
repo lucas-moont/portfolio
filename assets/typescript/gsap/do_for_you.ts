@@ -1,10 +1,13 @@
 //import { growWidth } from "../utils/grow-width";
 //TODO: LEVAR GROWHEIGHT PARA UM UTILS
 
-
 document.addEventListener("DOMContentLoaded", () => {
-  gsap.registerPlugin(ScrollTrigger)
-  function growWidth(element: HTMLElement, width: number | string, section: HTMLElement) {
+  gsap.registerPlugin(ScrollTrigger);
+  function growWidth(
+    element: HTMLElement,
+    width: number | string,
+    section: HTMLElement
+  ) {
     gsap.fromTo(
       element,
       {
@@ -17,13 +20,17 @@ document.addEventListener("DOMContentLoaded", () => {
         scrollTrigger: {
           trigger: section,
           start: "center center",
-          end: "center center"
-        }
+          end: "center center",
+        },
       }
     );
   }
 
-  function growHeight(element: HTMLElement, height: number | string, section: HTMLElement) {
+  function growHeight(
+    element: HTMLElement,
+    height: number | string,
+    section: HTMLElement
+  ) {
     gsap.fromTo(
       element,
       {
@@ -38,34 +45,49 @@ document.addEventListener("DOMContentLoaded", () => {
           trigger: section,
           start: "center center",
           end: "center center",
-        }
+        },
       }
     );
   }
 
   const whatICanDoForYouSection: HTMLElement | null =
     document.querySelector("#whatICanDoForYou");
-  const whatICanDoForYouLeftHorizontalBorder: HTMLElement | null = document.querySelector(
-    ".whatICanDoForYouLeftHorizontalBorder .whatICanDoForYouBorderInnerColor"
-  );
-  const whatICanDoForRightHorizontalBorder: HTMLElement | null = document.querySelector(
-    ".whatICanDoForRightHorizontalBorder .whatICanDoForYouBorderInnerColor"
-  );
-  const whatIcanDoForVerticalBorder: HTMLElement | null = document.querySelector(
-    ".whatICanDoForVerticalBorder .whatICanDoForYouBorderInnerColor"
-  )
+  const whatICanDoForYouLeftHorizontalBorder: HTMLElement | null =
+    document.querySelector(
+      ".whatICanDoForYouLeftHorizontalBorder .whatICanDoForYouBorderInnerColor"
+    );
+  const whatICanDoForRightHorizontalBorder: HTMLElement | null =
+    document.querySelector(
+      ".whatICanDoForRightHorizontalBorder .whatICanDoForYouBorderInnerColor"
+    );
+  const whatIcanDoForVerticalBorder: HTMLElement | null =
+    document.querySelector(
+      ".whatICanDoForVerticalBorder .whatICanDoForYouBorderInnerColor"
+    );
 
-  if (whatICanDoForYouLeftHorizontalBorder && whatICanDoForYouSection) {
-    growWidth(whatICanDoForYouLeftHorizontalBorder, "100%", whatICanDoForYouSection);
+  const isMobile = window.matchMedia("(max-width: 768px)").matches;
+
+  if (!isMobile) {
+    if (whatICanDoForYouLeftHorizontalBorder && whatICanDoForYouSection) {
+      growWidth(
+        whatICanDoForYouLeftHorizontalBorder,
+        "100%",
+        whatICanDoForYouSection
+      );
+    }
+
+    if (whatICanDoForRightHorizontalBorder && whatICanDoForYouSection) {
+      growWidth(
+        whatICanDoForRightHorizontalBorder,
+        "100%",
+        whatICanDoForYouSection
+      );
+    }
+
+    console.log(whatIcanDoForVerticalBorder);
+
+    if (whatIcanDoForVerticalBorder && whatICanDoForYouSection) {
+      growHeight(whatIcanDoForVerticalBorder, "100%", whatICanDoForYouSection);
+    }
   }
-
-  if (whatICanDoForRightHorizontalBorder && whatICanDoForYouSection) {
-    growWidth(whatICanDoForRightHorizontalBorder, "100%", whatICanDoForYouSection);
-  }
-
-  console.log(whatIcanDoForVerticalBorder)
-
-  if(whatIcanDoForVerticalBorder && whatICanDoForYouSection) {
-    growHeight(whatIcanDoForVerticalBorder, "100%", whatICanDoForYouSection)
-  }
-})
+});
