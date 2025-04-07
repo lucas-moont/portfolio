@@ -1,6 +1,10 @@
 #whatICanDoForYou {
   padding: 128px 32px;
 
+  @include mobile {
+    padding: 64px 16px;
+  }
+
   svg {
     height: 80px;
     margin-bottom: 16px;
@@ -19,6 +23,15 @@
       "whatIDoOne whatIDoOne"
       "whatIDoTwo whatIDoThree";
     position: relative;
+
+    @include mobile {
+      grid-template-columns: 1fr; /* uma coluna */
+      grid-template-rows: auto auto auto; /* três linhas automáticas */
+      grid-template-areas: 
+        "whatIDoOne"
+        "whatIDoTwo"
+        "whatIDoThree";
+    }
   }
 
   .whatICanDoForYouColumn {
@@ -45,6 +58,10 @@
   .whatIcanDoForYouColumnTwo,
   .whatIcanDoForYouColumnThree{
     padding-top: 128px;
+
+    @include mobile{
+      padding: 0 0 32px;
+    }
   }
 
   .whatICanDoForYouBorder{

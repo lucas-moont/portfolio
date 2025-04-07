@@ -20,6 +20,10 @@ header{
     font-family: "Source Code Pro", sans-serif;
     cursor: default;
     font-weight: 600;
+
+    @include mobile{
+      display: none;
+    }
   }
 
   nav{

@@ -2,12 +2,26 @@
   height: 100vh;
   align-items: center;
   position: relative;
+
+  @include mobile {
+    height: calc(100vh - 128px);
+  }
+}
+
+.background--custom.isLoaded{
+  @include mobile {
+    height: calc(100vh - 128px);
+  }
 }
 
 .introTextBox{
   font-size: 2em;
   font-family: "Montserrat", sans-serif;
   line-height: 1.1em;
+
+  @include mobile{
+    font-size: 1.6em;
+  }
 
   strong {
     font-weight: 500;

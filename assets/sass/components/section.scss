@@ -3,4 +3,8 @@ section {
   display: flex;
   justify-content: center;
   width: calc(100vw);
+
+  @include mobile {
+    padding: 32px 16px;
+  }
 }
