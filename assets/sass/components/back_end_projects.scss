@@ -2,12 +2,21 @@
   h2{
     text-align: left;
     margin-bottom: 64px;
+
+    @include mobile{
+      margin-bottom: 32px;
+    }
   }
 
   .backEndProjects{
     border: 1px solid $strong-red;
     padding: 32px;
     border-radius: 16px;
+    box-shadow: 0 0 16px $strong-red;
+
+    @include mobile{
+      padding: 16px;
+    }
     &:not(:last-child){
       margin-bottom: 32px;
     }
