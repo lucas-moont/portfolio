@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
     gsap.fromTo(
       element,
       {
-        x: `-120%`,
+        x: `-100vw`,
       },
       {
         x: "0%",
