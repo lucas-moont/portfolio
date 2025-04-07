@@ -2,12 +2,17 @@
   position: relative;
   padding-right: 128px;
 
+  .container{
+    position: relative;
+  }
+
   h2{
     text-align: left;
   }
 
   .pfpImage{
     width: 100%;
+    border-radius: 100%;
   }
 
   .col{
@@ -25,10 +30,11 @@
     flex-direction: column;
     gap: 1em;
     margin-top: 1em;
-    height: calc(100% - 128px);
-    background-color: red;
+    height: calc(100%);
+    border: 2px solid $strong-red;
+    border-radius: 8px;
     width: 64px;
-    right: 32px;
-    top: 60px;
+    right: -116px;
+    top: 0px;
   }
 }
