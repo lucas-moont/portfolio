@@ -9,7 +9,9 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "gsap": "^3.12.5",
-    "typescript": "^5.8.2"
+    "gsap": "^3.12.5"
+  },
+  "devDependencies": {
+    "typescript": "^5.8.3"
   }
 }

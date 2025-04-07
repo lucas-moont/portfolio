@@ -11,7 +11,6 @@ export function growWidth(element: HTMLElement, width: number | string, section:
           trigger: section,
           start: "center center",
           end: "center center",
-          markers: true,
         }
       }
     );

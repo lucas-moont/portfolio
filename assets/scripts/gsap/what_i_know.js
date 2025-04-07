@@ -12,7 +12,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 trigger: parentElement,
                 start: 'top center',
                 end: 'bottom center',
-                markers: true,
             }
         });
     }

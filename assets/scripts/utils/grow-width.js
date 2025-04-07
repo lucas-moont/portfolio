@@ -8,7 +8,6 @@ export function growWidth(element, width, section) {
             trigger: section,
             start: "center center",
             end: "center center",
-            markers: true,
         }
     });
 }

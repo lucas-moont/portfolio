@@ -1,9 +1,11 @@
 #getToKnowMe{
   position: relative;
   padding-right: 128px;
+  align-items: center;
 
   .container{
     position: relative;
+    align-items: center;
   }
 
   h2{
@@ -33,8 +35,9 @@
     border-radius: 8px;
     width: 64px;
     right: -116px;
-    top: 0px;
+    top: calc(50% - 128px);
     padding: 8px 4px;
+    box-shadow: 0 0 10px $strong-red;
 
     a{
       display: inline-flex;
