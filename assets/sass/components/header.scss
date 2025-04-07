@@ -29,12 +29,20 @@ header{
       gap: 16px;
       justify-content: center;
 
+      @include mobile{
+        flex-direction: column;
+      }
+
       a{
         color: $strong-red;
         font-weight: 600;
         text-decoration: none;;
         position: relative;
         font-size: 1.1rem;
+
+        @include mobile{
+          font-size: 1.4rem;
+        }
 
         &::after{
           content: '';
@@ -53,6 +61,17 @@ header{
           }
         }
       }
+    }
+
+    @include mobile {
+      position: absolute;
+      top: 0;
+      left: -100vw;
+      padding: 16px;
+      width: 100vw;
+      height: 100vh;
+      background-color: $black;
+      transition: 0.5s;
     }
   }
 }
