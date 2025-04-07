@@ -2,10 +2,17 @@
   position: relative;
   padding-right: 128px;
   align-items: center;
+  @include mobile{
+    padding-right: 16px;
+  }
 
   .container{
     position: relative;
     align-items: center;
+
+    @include mobile{
+      flex-direction: column;
+    }
   }
 
   h2{
@@ -20,6 +27,10 @@
   .col{
     width: 50%;
     flex-shrink: 0;
+
+    @include mobile{
+      width: 100%;;
+    }
   }
 
   .getToKnowMeDescription{
@@ -38,6 +49,12 @@
     top: calc(50% - 128px);
     padding: 8px 4px;
     box-shadow: 0 0 10px $strong-red;
+
+    @include mobile{
+      position: static;
+      flex-direction: row;
+      width: 100%;
+    }
 
     a{
       display: inline-flex;
